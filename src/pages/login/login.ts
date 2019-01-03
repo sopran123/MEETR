@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { UserProfilePage } from '../user/user-profile/user-profile';
+import { UserGPSPage } from '../user/user-gps/user-gps';
 import {AdminTabsPage} from '../admin/admin-tabs/admin-tabs';
 import {Facebook} from '@ionic-native/facebook';
 import firebase from 'firebase';
@@ -56,8 +57,10 @@ export class LoginPage {
     this.navCtrl.setRoot(AdminTabsPage);
   }
   gotoUser(){
-
     this.navCtrl.setRoot(UserProfilePage);
+  }
+  gotoUserGPS(){
+    this.navCtrl.setRoot(UserGPSPage);
   }
 }
 

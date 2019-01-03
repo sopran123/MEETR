@@ -3,6 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
+import { UserGPSPage } from '../pages/user/user-gps/user-gps';
 //import { AdminTabsPage } from '../pages/admin/admin-tabs/admin-tabs';
 
 @Component({

@@ -10,6 +10,8 @@ import { UserProfilePageModule } from '../pages/user/user-profile/user-profile.m
 import { UserEditPageModule } from '../pages/user/user-edit/user-edit.module';
 import { UserSettingPageModule } from '../pages/user/user-setting/user-setting.module';
 import { UserSettingPage } from '../pages/user/user-setting/user-setting';
+import { UserGPSPageModule } from '../pages/user/user-gps/user-gps.module';
+import { UserGPSPage } from '../pages/user/user-gps/user-gps';
 import { UserEditPage } from '../pages/user/user-edit/user-edit';
 import { AdminTabsPageModule} from '../pages/admin/admin-tabs/admin-tabs.module';
 import { AdminTabsPage} from '../pages/admin/admin-tabs/admin-tabs';
@@ -43,6 +45,7 @@ firebase.initializeApp(firebaseConfig)
     UserProfilePageModule,
     UserEditPageModule,
     UserSettingPageModule,
+    UserGPSPageModule,
     AdminTabsPageModule,
     AdminHomePageModule,
     AdminListPageModule,
@@ -53,6 +56,7 @@ firebase.initializeApp(firebaseConfig)
     MyApp,
     UserEditPage,
     UserSettingPage,
+    UserGPSPage,
     AdminTabsPage,
     AdminHomePage,
     AdminListPage,
