@@ -22,7 +22,7 @@ export class LoginPage {
   constructor(public navCtrl: NavController, public facebook:Facebook, public navParams: NavParams, public menuCtrl:MenuController ) {
   }
 
-  //FACEBOOK Login, working on Android Emulator, but not on ionic serve
+  //FACEBOOK Login ----not yet working "cordova not available" output.
   facebookLogin(){
     this.facebook.login(['email']).then(res=>{
       const fbcredential = firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken)
@@ -36,7 +36,7 @@ export class LoginPage {
     })
   }  
 
-  //DO NOT DELETE, Reference siya sa fb login ko
+  //DO NOT DELETE, Reference siya sa fb login.
     /*
     let provider = new firebase.auth.FacebookAuthProvider();  
     firebase.auth().signInWithRedirect(provider).then(()=>{
